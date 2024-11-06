@@ -2,7 +2,7 @@
 
 
 
-h1, h2, h3 {
+h1, h2 {
     color: #333;
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
@@ -120,6 +120,16 @@ body {
     margin-left: 1rem;
 }
 
+.input-box textarea {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
 .center-text {
     margin: 0.6rem 0;
     margin-top: 3rem 0;
@@ -139,29 +149,6 @@ body {
     margin-left: 1rem;
 }
 
-
-.editavel-div {
-    height: 150px; /* Aumenta a altura */
-    padding: 10px; /* Adiciona padding */
-    box-sizing: border-box; /* Inclui o padding no cálculo da altura */
-    border: 1px solid #ccc; /* Adiciona uma borda */
-    border-radius: 10px; /* Adiciona bordas arredondadas */
-    overflow-y: auto; /* Adiciona barra de rolagem vertical se necessário */
-    white-space: pre-wrap; /* Mantém as quebras de linha e espaços */
-    word-wrap: break-word; /* Quebra palavras longas */
-}
-
-/* Estilo para garantir que o texto placeholder comece no topo */
-.editavel-div::before {
-    content: attr(placeholder);
-    color: #aaa;
-    display: block;
-}
-
-/* Remove o placeholder quando o usuário começa a digitar */
-.editavel-div:focus::before {
-    content: '';
-}
 
 .input-box input:hover {
     background-color: #eeeeee75;
@@ -209,6 +196,7 @@ body {
     margin-top: 2.5rem;
     border: none;
     background-color: #7fb180;
+    color: #fff;
     padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
@@ -267,7 +255,6 @@ body {
     }
 }
 
-* Estilo para os quadradinhos das receitas */
 .receita-card {
     
     border-radius: 8px;
@@ -310,7 +297,7 @@ body {
     background-color: #acc3ad;
 }
 
-/* Estilo para o container das receitas */
+
 #lista-receitas {
     display: flex;
     flex-wrap: wrap;
